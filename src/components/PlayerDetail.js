@@ -1,5 +1,5 @@
 import React from "react";
-// import './playerDetail.scss';
+import './playerDetail.css';
 
 function PlayerDetail(props) {
   console.log(props);
@@ -13,23 +13,53 @@ function PlayerDetail(props) {
     JerseyNumber,
   } = props.playerlist;
   return (
-    <div className="ui group">
-      <div className="ui container">
-        <div>
-          <div>
-          <div style={{
-            backgroundColor: "green",
-            width: "20%",
-            height: "30px",
-            borderRadius: "6px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "white",
-            fontWeight: "bold"
-          }}><span>Overall {Overall}</span></div>
-          </div>
-          <div className="ui list" style={{
+    <div>
+      {/* <div> */}
+        {/* <div> */}
+          {/* <div> */}
+          {/* <div> */}
+            <h1>Overall {Overall}</h1>
+            {/* </div> */}
+          {/* </div> */}
+          <ul>
+            <li style={{accentColor:"red"}}>
+              <div className="title">
+                Age 
+              </div>
+              <div className="descr">{Age}</div>
+            </li>
+            <li style={{accentColor:'#1286A8'}}>
+              <div className="title">
+                Height 
+              </div>
+              <div className="descr">{Height}</div>
+            </li>
+            <li style={{color:"#D2B53B"}}>
+              <div className="title">
+                Weight
+              </div>
+              <div className="descr">{Weight}</div>
+            </li>
+            <li style={{accentColor:"#0B374D"}}>
+              <div className="title">
+                Preferred Foot 
+              </div>
+              <div className="descr">{PreferredFoot}</div>
+            </li>
+            <li style={{accentColor:"#DA611E"}}>
+              <div className="title">
+                Position 
+              </div>
+              <div className="descr">{Position}</div>
+            </li>
+            <li style={{accentColor:"#0B374D"}}>
+              <div className="title">
+                Jersey Number 
+              </div>
+              <div className="descr">{JerseyNumber}</div>
+            </li>
+          </ul>
+          {/* <div className="ui list" style={{
             padding: "17px",
             fontFamily: "monospace"
           }}>
@@ -52,9 +82,9 @@ function PlayerDetail(props) {
               margin: "10px"
             }}>Jersey Number <b>{JerseyNumber}</b></div>
             <div className="item"></div>
-          </div>
-        </div>
-      </div>
+          </div> */}
+        {/* </div> */}
+      {/* </div> */}
     </div>
   );
 }
