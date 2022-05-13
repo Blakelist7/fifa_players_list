@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import ContactCard from "./ContactCard";
 import './ContactDesign.css'
+import './contactCard.css';
 
 function ContactList(props) {
   console.log(props);
@@ -24,14 +25,15 @@ function ContactList(props) {
   };
 
   return (
-    <div className="homepage">
-      <h2
-        style={{
-          marginTop: "50px",
-        }}
-      >
-        Player List
-      </h2>
+    <div >
+      <header>
+      <h1 className="leaderboard__title"
+        // style={{
+        //   marginTop: "50px",
+        // }}
+      ><span className="leaderboard__title--top">Player List</span>
+      </h1>
+      </header>
       <div className="ui search">
         <div
           className="ui icon input"

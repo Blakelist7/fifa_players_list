@@ -1,4 +1,5 @@
 import React from "react";
+// import './playerDetail.scss';
 
 function PlayerDetail(props) {
   console.log(props);

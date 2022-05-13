@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import user from "../images/user.png";
+import "./contactCard.css";
 
 function ContactCard(props) {
 
@@ -8,19 +9,21 @@ function ContactCard(props) {
   console.log(props.contact)
   return (
     <div>
-      <div className="item">
-        <img className="ui avatar image" src={user} alt="user" />
-        <div className="content">
+      <main className="leaderboard__profiles">
+        <article className="leaderboard__profile">
+        <img className="leaderboard__picture" src={user} alt="user" />
+        <span className="content">
           <Link
             to={{
               pathname: `/contact/${id}`,
               state: { contact: props.contact },
             }}
           >
-            <div className="header">{Name}</div>
+            <span className="leaderboard__name">{Name}</span>
           </Link>
-        </div>
-      </div>
+        </span>
+        </article>
+      </main>
     </div>
   );
 }
